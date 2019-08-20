@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Actividad Evaluable E3-UF1306</title>
+
+<!-- Enlaces a las librerías Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.theme.min.css">
+
+<!-- Enlace al archivo Javascript con mi función-->
+<script type="text/javascript" src="js/codigo.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="main">
+
+<button id="button_fecha" class="button" onclick="verHora()">VER HORA actual</button>
+<div id="ver_mensaje"></div>
+<button id="button_fecha" class="button" onclick="ocultarHora()">OCULTAR HORA ACTUAL</button>
+
+<hr>
+<h1>¿A qué generación perteneces?</h1>
+<p>La base de toda estrategia de marketing es identificar nuestro nicho de mercado, conocer a nuestro público, ya que, tenemos que tener en cuenta que las tendencias globales afectan a la mentalidad y al comportamiento de nuestro target, provocando un cambio en la manera en que compran.</p>
+<p>Una forma de segmentar es a través de las generaciones realizado por Kotler y Keller en 2002. En un principio, esta segmentación se realizaba en base a elementos económicos y culturales. Hoy en día, esta segmentación se basa en la edad o generación a la que pertenecen las personas.</p>
+<p>Actualmente, existen 4 generaciones dependiendo de la edad:</p>
+<ul>
+	<li><strong>Generación sin nombre:</strong> antes de 1945.</li>
+	<li><strong>Generación Baby Boomers:</strong> entre 1946 y 1964</li>
+	<li><strong>Generación X:</strong> entre 1965 y 1979</li>
+	<li><strong>Generación Millenials:</strong> entre 1980 y 1999</li>
+	<li><strong>Generación Z:</strong> entre el 2000 en adelante.</li>
+</ul>
+<p><img src="img/infografia-generaciones.gif" alt="infografia que muestra las caracteristicas de las generaciones"></p>
+<h2>Introduce tus datos y sabrás a qué generación perteneces</h2>
+
+<div class="calcular_edad">
+<form id="form1">
+<label for="nombre">Escribe tu nombre</label>
+<input type="text" id="nombre">
+<p id="errorNombre"></p>
+
+<label for="nacimiento">¿En qué año naciste?</label>
+<input type="text" id="nacimiento">
+<p id="errorAnyo"></p>
+
+<button type="button" id="boton_calcular_edad" onclick="calcularGeneracion()">Calcular edad</button>
+<button type="button" id="resetear" onclick="reset()">Limpiar formulario</button>
+</form>
+</div>
+
+<div id="txtSolucion"></div>
+
+</div>
+
+<div id="conclusiones">
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Correcciones Javascript</a></li>
+    <li><a href="#tabs-2">Cambios Accesibilidad</a></li>
+    <li><a href="#tabs-3">Mejoras Usabilidad</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p><i>Escribe aquí las correcciones que has hecho.</i></p>
+  </div>
+  <div id="tabs-2">
+    <p><i>Escribe aquí los cambios que has hecho para hacerla más accesible</i></p>
+  </div>
+  <div id="tabs-3">
+    <p><i>Escribe aquí cómo has mejorado la usabilidad de la página</i></p>
+  </div>
+</div>
+
+</div>
+
+
+
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+</body>
+</html>
