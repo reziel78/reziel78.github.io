@@ -1,0 +1,81 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+	width: 80%;
+	margin:20px auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#main p {margin-bottom: 15px;}
+#main h1 {margin: 15px 0;}
+#main img {margin:20px 0;}
+.button {
+	padding:10px;
+	margin:5px;
+	border-radius: 3px;
+	width: 20%;
+	color: black;
+}
+
+#boton_calcular_edad, #resetear {
+	border: 1px solid gray;
+	padding:10px;
+	margin:5px;
+	border-radius: 3px;
+	width: 30%;
+}
+
+#resetear {background-color: lightgray}
+#resetear:hover {background-color: orange}
+
+#boton_calcular_edad:hover {background-color: black; color: white;}
+
+#ver_mensaje {
+	display: none;
+	margin:20px;
+	padding:20px;
+	width: 40%;
+	text-align: center;
+}
+
+.calcular_edad, #form1 {display: flex; justify-content: center; flex-flow: row wrap; margin: 20px auto;}
+.calcular_edad form {width: 50%}
+.calcular_edad {
+	width: 100%;
+	background-color: #A2FFFB;
+}
+#form1 label, #form1 input {
+	padding: 10px;
+	margin:5px;
+}
+
+#form1 input {width: 50%}
+#form1 label {width: 40%}
+
+#form1 label {text-align: right;}
+
+#form1 label span {font-style: italic; font-size: 0.8em; color: gray;}
+#form1 p {width: 100%;text-align: right; color: red; padding-right: 30px; font-size: 0.8em}
+
+#conclusiones {
+	width: 80%;
+	margin:0 auto;
+	padding:20px;
+}
+
+#conclusiones h2, #conclusiones h3 {margin:25px 0 10px 0;}
+
+
+/* Cambios en el tema Jquery UI */
+.ui-state-hover {background-color: black !important;}
+.ui-state-default a:link {color: black;}
+.ui-state-hover a:hover {color:white;}
+.ui-state-active a:link {color: gray;}
+.ui-state-active a:hover {color: gray;}
